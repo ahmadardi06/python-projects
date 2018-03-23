@@ -31,6 +31,8 @@ while True:
 
   url = "http://ahmadardi06.it.student.pens.ac.id/lampu/uploadlocation.php?lat="+str(lat)+"&lng="+str(lng)
   f = requests.get(url)
+  #url = "https://trackcar.herokuapp.com/api/mobil/5ab4d7c2653fab26b1212dec
+  #f = requests.put(url, {latitude: lat, longitude: lng})
   print f.json()
   
   #delay 20 detik
